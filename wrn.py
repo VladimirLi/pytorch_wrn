@@ -78,6 +78,7 @@ class Network(nn.Module):
         super(Network, self).__init__()
 
         input_shape = config['input_shape']
+        self.input_shape = input_shape
         n_classes = config['n_classes']
 
         base_channels = config['base_channels']
